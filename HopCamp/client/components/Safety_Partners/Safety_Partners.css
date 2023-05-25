@@ -1,0 +1,75 @@
+.safety-partners-component-container {
+    /* height: 100vh; */
+    background-color:#f1f3ee;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.safety-partners-heading {
+    font-size: 26px;
+    line-height: 16px;
+    text-align: start;
+    margin-left: 24px;
+    margin-top: 50px;
+    font-family: sans-serif;
+}
+
+.safety-partners-card-container{
+    /* height: 80vh; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+.safety-partner-card{
+    background-color: #e6efd9;
+    color: #28400c;
+    height:510px;
+    margin: 12px;
+    padding-bottom: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.safety-partner-card-content{
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    /* height: 100vh; */
+    /* width: 100wh; */
+    /* background-color: red; */
+}
+
+.safety-partner-card-image{
+    /* height: 260px; */
+    width: 330px;
+    z-index: 1;
+    /* visibility: hidden; */
+}
+
+.safety-partner-card-button{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid black;
+    border-radius: 24px;
+    width: 350px;
+    height: 48px;
+    z-index: 2;
+    text-decoration: none;
+    color:#28400c;
+}
+
+.safety-partner-card-button:hover{
+    background-color: #28400c;
+    color: white;
+}
+

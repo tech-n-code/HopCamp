@@ -1,0 +1,28 @@
+.selectionBt {
+    padding:20px;
+    padding-right: 30%;
+}
+.tableContainer{
+    height:250px;
+    width:300px;
+}
+td {
+    height: 40px;
+    min-width: 40px;
+    font-size: 12px;
+}
+.calenderSlot:hover {
+    background-color: var(--bs-border-color);
+}
+small {
+    font-size: 80%;
+}
+.cardElement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 100%;
+    color: black;
+    background: white;
+}

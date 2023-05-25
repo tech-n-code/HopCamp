@@ -1,0 +1,124 @@
+.safety-component-container {
+    height: 600px;
+    background-color: #e6efd9;
+    padding: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.safety-heading {
+    width:100%;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: left;
+    margin-top: 50px;
+    font-family: sans-serif;
+    /* border: 2px solid green */
+    
+}
+
+.safety-card-container{
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* border: 1px dotted green */
+}
+
+
+.safety-card{
+    background-color:#f1f3ee;
+    color: #0c3a40;
+    height: 200px;
+    width: calc(50% - 24px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    position: relative;
+    /* border: 1px dashed purple; */
+    
+}
+.safety-card1{
+    background-color:#f1f3ee;
+    color: #0c3a40;
+    height: 200px;
+    width:100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    position: relative;
+    /* border: 1px dashed purple; */
+    
+}
+.top{
+    width: 100%;
+    height: 234px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* border: 1px dotted green */
+}
+
+.hipcamp-hand {
+    width: 150px;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    /* border: 1px dashed blue */
+}
+
+.safety-card-content{
+    margin:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    /* border: 1px solid red */
+    
+}
+
+[data-card-name="bottom2"],
+[data-card-name="bottom3"] {
+  flex-basis: calc(50% - 24px); 
+  width: 400px; 
+}
+.safety-card-image{
+    height: auto;
+    width: auto;
+    z-index: 1;
+    /* border: 1px solid brown */
+    
+}
+
+.safety-card-button{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color:rgb(44, 26, 15);
+    border: 1px solid black;
+    border-radius: 24px;
+    width: 144px;
+    height: 48px;
+    z-index: 2;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+
+.safety-card-button:hover{
+    background-color: rgb(244, 247, 242);
+    color: rgb(44, 26, 15);
+}
+

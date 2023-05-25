@@ -1,0 +1,24 @@
+.map-container {
+    height: 75vh;
+    width: 100%;
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+    border-radius: 20px;
+    /* background-color: red; */
+    /* display:none !important; */
+}
+.gmnoprint a, .gmnoprint span, .gm-style-cc {
+    display:none;
+}
+.gmnoprint div {
+    background:none !important;
+}
+.gm-style-mtc button {
+    margin-bottom: 100px; /* move the buttons up */
+}
+
+.map-container .gmnoprint.gm-bundled-control {
+    top: 10px; /* Adjust the top position as needed */
+    right: 10px; /* Adjust the right position as needed */
+    z-index: 1000; /* Adjust the z-index value as needed */
+}

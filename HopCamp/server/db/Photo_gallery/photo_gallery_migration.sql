@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS photos CASCADE;
+
+CREATE TABLE photos (
+  id SERIAL PRIMARY KEY,
+  pic VARCHAR (255),
+  url VARCHAR(1000)
+);

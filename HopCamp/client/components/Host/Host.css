@@ -1,0 +1,159 @@
+.host-info-root-container {
+    display: flex;
+    width: 100vw;
+    
+    /* position: relative;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    width: 70vw; */
+}
+  
+.host-info-container-centered {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1280px;
+    min-width: 550px;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding-bottom: 48px;
+    padding-top: 48px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+}
+  
+.host-info {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+}
+  
+.img-circle {
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+}
+
+.avatar {
+    position: absolute;
+    inset: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: auto;
+    display: block;
+    width: 0px;
+    height: 0px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+
+.hosted-by {
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+.since {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contact-button {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    
+    border-radius: 8px;
+    width: 140px;
+    height: 45px;
+}
+  
+
+/*modal*/
+.host-modal {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    overflow: auto;
+    align-items: center;
+    justify-content: center;
+}
+  
+.host-modal-content {
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-radius: 8px;
+}
+  
+.ask {
+    font-size: 24px;
+    font-weight: 800;
+    padding-top: 45px;
+    padding-bottom: 10px;
+}
+  
+.message-body {
+    position: absolute;
+    /* border: 1px solid white; */
+    width: 425px;
+    height: 300px;
+    align-self: center;
+    padding-top: 30px;
+}
+  
+/* label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+} */
+  
+textarea {
+    height: 250px;
+    width: 425px;
+    resize: vertical;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #aaaaaa00;
+    border: 1px solid #ccc;
+}
+
+.host-modal-body-contact {
+    position: relative;
+    height: 500px;
+    width: 574px;
+}
+
+.host-modal-send-button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    color: rgb(243, 242, 239);
+    border-radius: 4px;
+    border: none;
+}
+
+.host-modal-close-button {
+    position: absolute;
+    border:none;
+    top:20px;
+    left:10px;
+    font-weight: 900;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #d8e2eb21;
+    color: rgb(51, 49, 33);
+    z-index: 10050;
+}
+
+
+.host-modal-close-button:hover {
+    border-radius: 75%;
+    background-color: #05050269;
+}

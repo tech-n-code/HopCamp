@@ -1,0 +1,27 @@
+/* Comment test -- Chris */
+
+.land-sites {
+    margin-left: 3rem;
+    border-left: 10px blue;
+
+}
+.left-border {
+border-left: 10px black;
+}
+
+.left-details {
+    width: 50%;
+}
+.land-details1{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    width: 70%;
+}
+.land-details1::after {
+    content: "...";
+}
+.modal-dialog {
+    --bs-modal-width:800px;
+}
