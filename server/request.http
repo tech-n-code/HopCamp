@@ -1,0 +1,14 @@
+###
+GET http://localhost:5005/api/tentsites
+
+
+###
+GET http://localhost:5005/api/ratings
+
+
+###
+GET http://localhost:5005/api/camping-spots
+
+
+###
+GET http://localhost:5005/api/things-nearby
