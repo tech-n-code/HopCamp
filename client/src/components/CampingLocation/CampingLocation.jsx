@@ -45,28 +45,37 @@ function Map() {
   // console.log(center);
 
   const [markerSize, setMarkerSize] = useState({
-    width: 150, // Replace with your desired width in pixels
-    height: 150, // Replace with your desired height in pixels
+    width: 100, // Replace with your desired width in pixels
+    height: 100, // Replace with your desired height in pixels
   });
 
   return (
-    <GoogleMap options={mapOptions} mapContainerClassName="map-container">
-      <MarkerF
-        position={center}
-        anchorPoint={new window.google.maps.Point(0, 0)}
-        options={{
-          text: "Salmon Creek Ranch",
-          icon: {
-            url: CustomMarker,
-            scaledSize: new window.google.maps.Size(
-              markerSize.width,
-              markerSize.height
-            ),
-            scale: 1,
-          },
-        }}
-      />
-    </GoogleMap>
+    <>
+      <div className="campingLocation-footnote-title">
+        <span>Location</span>
+      </div>
+      <GoogleMap options={mapOptions} mapContainerClassName="map-container">
+        <MarkerF
+          position={center}
+          anchorPoint={new window.google.maps.Point(0, 0)}
+          options={{
+            text: "Salmon Creek Ranch",
+            icon: {
+              url: CustomMarker,
+              scaledSize: new window.google.maps.Size(
+                markerSize.width,
+                markerSize.height
+              ),
+              scale: 1,
+            },
+          }}
+        />
+      </GoogleMap>
+      <div className="campingLocation-footnote-container">
+        <span className="campingLocation-footnote">Bodega Bay, California, United States</span>
+        <span>To respect the Host's privacy, the precise address of this land will be provided after booking</span>
+      </div>
+    </>
   );
 }
 
