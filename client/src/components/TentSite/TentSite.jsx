@@ -4,17 +4,16 @@ import "./TentSite.css";
 import IndividualTentSite from "./IndividualTentSite";
 
 const TentSite = () => {
-  const defaultSiteAmnt = 3;
-  const [defaultTentCount, setDefaultTentCount] = useState(defaultSiteAmnt);
+  const [defaultTentCount, setDefaultTentCount] = useState(3);
   const [tentsiteData, setTentSiteData] = useState([]);
   const [lodgingData, setlodgingData] = useState([]);
   const allSiteAmnt = tentsiteData.length;
 
   const handleShowMore = () => {
-    if (defaultTentCount === defaultSiteAmnt) {
+    if (defaultTentCount === 3) {
       setDefaultTentCount(allSiteAmnt - 1);
     } else {
-      setDefaultTentCount(defaultSiteAmnt);
+      setDefaultTentCount(3);
     }
   };
 
@@ -32,9 +31,7 @@ const TentSite = () => {
         setlodgingData(lodgingArr);
       });
   }, []);
-  useEffect(() => {
-    // console.log(defaultTentCount);
-  }, [defaultTentCount]);
+
   return (
     <div
       className="d-flex"
@@ -50,11 +47,11 @@ const TentSite = () => {
               {tentsiteData.length} available
             </div>
           </div>
-          {tentsiteData.slice(0, defaultTentCount).map((element, index) => (
-            <IndividualTentSite key={index} data={element} />
+          {tentsiteData.slice(0, defaultTentCount).map((element) => (
+            <IndividualTentSite key={element.id} data={element} />
           ))}
           <button className="show-more-btn" onClick={handleShowMore}>
-            {defaultTentCount === defaultSiteAmnt ? "Show More" : "Show Less"}
+            {defaultTentCount === 3 ? "Show More" : "Show Less"}
           </button>
         </div>
         <div className="tent-sites">
@@ -65,8 +62,8 @@ const TentSite = () => {
               {lodgingData.length} available
             </div>
           </div>
-          {lodgingData.map((element, index) => (
-            <IndividualTentSite key={index} data={element} />
+          {lodgingData.map((element) => (
+            <IndividualTentSite key={element.id} data={element} />
           ))}
         </div>
       </div>
