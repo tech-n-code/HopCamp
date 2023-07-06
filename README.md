@@ -37,6 +37,7 @@
 - clone the project repo
 - make sure Docker Desktop is installed and running on your machine
 - `cd` into the `HopCamp` directory
+- run `cp .env.template .env`
 - run `npm install --prefix=server; npm install --prefix=client`
 - run `docker-compose up --build`
 - to power-down the app run `docker-compose down -v` to delete its containers and associated volumes
