@@ -1,24 +1,52 @@
 .map-container {
-    height: 75vh;
-    width: 100%;
-    cursor: -webkit-grabbing;
-    cursor: grabbing;
-    border-radius: 20px;
-    /* background-color: red; */
-    /* display:none !important; */
+  height: 35vh;
+  width: 100%;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+  border-radius: 20px;
 }
-.gmnoprint a, .gmnoprint span, .gm-style-cc {
-    display:none;
+
+.gmnoprint a,
+a.gmnoprint span,
+.gm-style-cc {
+  display: none;
 }
+
 .gmnoprint div {
-    background:none !important;
+  background: none !important;
 }
+
 .gm-style-mtc button {
-    margin-bottom: 100px; /* move the buttons up */
+  margin-bottom: 100px; /* move the buttons up */
 }
 
 .map-container .gmnoprint.gm-bundled-control {
-    top: 10px; /* Adjust the top position as needed */
-    right: 10px; /* Adjust the right position as needed */
-    z-index: 1000; /* Adjust the z-index value as needed */
+  top: 10px; /* Adjust the top position as needed */
+  right: 10px; /* Adjust the right position as needed */
+  z-index: 1000; /* Adjust the z-index value as needed */
+}
+
+.campingLocation-footnote-container,
+.campingLocation-footnote-title,
+.campingLocation-footnote,
+.campingLocation-footnote-note {
+  font-family: Calibre, Helvetica, Arial, sans-serif;
+  color: rgb(51, 49, 33);
+}
+
+.campingLocation-footnote-title {
+  font-weight: 600;
+  font-size: 24px;
+  padding: 0 0 20px 0;
+}
+
+.campingLocation-footnote-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 40px 0;
+}
+
+.campingLocation-footnote {
+  font-weight: 600;
+  font-size: 16px;
 }
