@@ -34,13 +34,15 @@
 
 ## Installation & Setup
 
+- clone the project repo
+- make sure Docker Desktop is installed and running on your machine
 - `cd` into the `HopCamp` directory
 - run `npm install --prefix=server; npm install --prefix=client`
-- spin up client/server separately
-	- `npm dev` in the client folder
-	- `npm start` in the server folder
-
-- we used [Supabase](https://supabase.com/dashboard/sign-in) for db, all migration and seed files are in the `server/db` folder
+- run `docker-compose up --build`
+- to power-down the app run `docker-compose down -v` to delete its containers and associated volumes
+- (optional) to power-down the app and also delete its images run `docker-compose down -v --rmi all`
+- for class demo we used [Supabase](https://supabase.com/dashboard/sign-in) for database, all migration and seed files are in the `db` folder
+- NOTE: the project was refactored to deploy using docker-compose and no longer uses Supabase
 
 ## Developers
 
