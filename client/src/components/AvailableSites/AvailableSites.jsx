@@ -21,7 +21,7 @@ function AvailableSites(props) {
   };
   const addGuest = (event) => {
     let buttonRef = event.target;
-    console.log(buttonRef.id);
+    // console.log(buttonRef.id);
     switch (buttonRef.id) {
       case "addAdult":
         if (adultCount + childCount != maxGuestCount)

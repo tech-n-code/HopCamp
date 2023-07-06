@@ -42,7 +42,7 @@ function Map() {
   };
 
   const center = mapOptions.center;
-  console.log(center);
+  // console.log(center);
 
   const [markerSize, setMarkerSize] = useState({
     width: 150, // Replace with your desired width in pixels

@@ -50,7 +50,7 @@ INSERT INTO photos (pic, url) VALUES
 
   --rating TABLE
 
-  INSERT INTO rating (username, pic_url, date, recommend, campsite, top_line, narrative) VALUES ('Michael M.', 'https://hipcamp-res.cloudinary.com/image/upload/v1681428992/default_avatar_sxenbd.png', '2023-5-15', true, 'Site 1 - Redwood Camp', null, 'This was our third trip to Salmon Creek Ranch, and we had a wonderful time as always. Thank you for your wonderful hospitality.');
+INSERT INTO rating (username, pic_url, date, recommend, campsite, top_line, narrative) VALUES ('Michael M.', 'https://hipcamp-res.cloudinary.com/image/upload/v1681428992/default_avatar_sxenbd.png', '2023-5-15', true, 'Site 1 - Redwood Camp', null, 'This was our third trip to Salmon Creek Ranch, and we had a wonderful time as always. Thank you for your wonderful hospitality.');
 
 INSERT INTO rating (username, pic_url, date, recommend, campsite, top_line, narrative) VALUES ('Dan P.', 'https://hipcamp-res.cloudinary.com/image/upload/v1681428992/default_avatar_sxenbd.png', '2023-5-15', true, 'Site 2 - Creekside Camp', 'Creekside #2', 'I had a great time camping! Stayed at Creekside #2 and really enjoyed the experience.');
 
@@ -113,13 +113,13 @@ INSERT INTO rating (username, pic_url, date, recommend, campsite, top_line, narr
 -- tent_locations TABLE
 
 INSERT INTO tent_locations (price, icon, lat, lng) VALUES
-    ('$120','tentIcon',38.357545192706645,-123.00161904696465),
-    ('$120','tentIcon',38.35720866975814,-123.00195164087064),
-    ('$120','tentIcon',38.35641200618477,-123.00222556527875),
-    ('$120','tentIcon',38.35575318999367,-123.0024773538188),
-    ('$120','tentIcon',38.35561857767026,-123.00382918711409),
-    ('$120','tentIcon',38.35527363244915,-123.00311035512375),
-    ('$399','bedIcon',38.35428226556023,-123.00542735269164);
+    ('$120', 'tentIcon', 38.357545192706645, -123.00161904696465),
+    ('$120', 'tentIcon', 38.35720866975814, -123.00195164087064),
+    ('$120', 'tentIcon', 38.35641200618477, -123.00222556527875),
+    ('$120', 'tentIcon', 38.35575318999367, -123.0024773538188),
+    ('$120', 'tentIcon', 38.35561857767026, -123.00382918711409),
+    ('$120', 'tentIcon', 38.35527363244915, -123.00311035512375),
+    ('$399', 'bedIcon', 38.35428226556023, -123.00542735269164);
 
 -- tentsites TABLE
 

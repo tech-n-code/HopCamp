@@ -8,7 +8,7 @@ function Host() {
   const [showModal, setShowModal] = useState(false);
 
   const handleButtonClick = () => {
-    console.log("click");
+    // console.log("click");
     setShowModal(true);
   };
 
@@ -18,7 +18,7 @@ function Host() {
 
   const handleOnClick = () => {
     const textarea = document.querySelector("textarea");
-    console.log(textarea.value);
+    // console.log(textarea.value);
     setShowModal(false);
   };
 

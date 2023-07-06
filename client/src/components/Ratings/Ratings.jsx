@@ -5,7 +5,7 @@ const Ratings = () => {
   const defaultReviewsAmount = 6;
   const [ratingsData, setRatingsData] = useState([]);
   const [visibleReviews, setVisibleReviews] = useState(defaultReviewsAmount);
-  console.log(ratingsData);
+  // console.log(ratingsData);
 
   useEffect(() => {
     const fetchRatings = async () => {
@@ -105,7 +105,7 @@ const RatingCard = (props) => {
   const originalDate = new Date(originalDateString);
 
   const month = originalDate.getMonth() + 1; // Adding 1 because months are zero-based
-  console.log(month);
+  // console.log(month);
   const monthStr =
     month === 1
       ? "January"

@@ -34,7 +34,8 @@
 
 ## Installation & Setup
 
-- `cd` into each server and client folder and run `npm install`
+- `cd` into the `HopCamp` directory
+- run `npm install --prefix=server; npm install --prefix=client`
 - spin up client/server separately
 	- `npm dev` in the client folder
 	- `npm start` in the server folder
@@ -46,5 +47,5 @@
 - Chris Stewart - [@CStewCodes](https://github.com/CStewCodes)
 - Genglin Yu - [@DessertWarrior](https://github.com/DessertWarrior)
 - Dennis Kennedy - [@Kennedyz71](https://github.com/Kennedyz71)
-- Daniel Purdy - [DanielPurdy509](https://github.com/DanielPurdy509)
+- Daniel Purdy - [@DanielPurdy509](https://github.com/DanielPurdy509)
 - Will Franceschini - [@tech-n-code](https://github.com/tech-n-code)

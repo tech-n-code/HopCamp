@@ -19,7 +19,7 @@ const TentSite = () => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:5001/api/tentsites")
+    fetch("/api/tentsites")
       .then((responses) => responses.json())
       .then((result) => {
         let rvArr = [];
@@ -33,7 +33,7 @@ const TentSite = () => {
       });
   }, []);
   useEffect(() => {
-    console.log(defaultTentCount);
+    // console.log(defaultTentCount);
   }, [defaultTentCount]);
   return (
     <div

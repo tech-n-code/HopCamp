@@ -9,8 +9,8 @@ dotenv.config();
 const app = express();
 const pool = new Pool({ connectionString: process.env.DATABASE_URL });
 pool.connect();
+console.log(pool)
 
-const port = process.env.PORT || 5005;
 app.use(express.json());
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -100,10 +100,4 @@ app.get("/api/things-nearby", function (req, res) {
   });
 });
 
-app.listen(port, (err) => {
-  if (err) {
-    console.error(err);
-  } else {
-    console.log("Server started on port " + port);
-  }
-});
+export default app;

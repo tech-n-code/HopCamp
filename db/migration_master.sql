@@ -14,7 +14,7 @@ CREATE TABLE campers_also (
     num_of_ratings INTEGER NOT NULL,
     acres INTEGER NOT NULL,
     location VARCHAR(40) NOT NULL,
-    price NIMERIC(5,2)
+    price NUMERIC(5,2)
 );
 
 CREATE TABLE camping_spot (
@@ -47,10 +47,10 @@ CREATE TABLE rating (
 
 CREATE TABLE tent_locations (
     id serial PRIMARY KEY,
-    price varchar,
-    icon text,
-    lat number,
-    lng number
+    price VARCHAR(10),
+    icon VARCHAR(10),
+    lat NUMERIC,
+    lng NUMERIC
 );
 
 CREATE TABLE tentsites (
@@ -64,7 +64,7 @@ CREATE TABLE tentsites (
   restrictions TEXT,
   amenities TEXT,
   price DECIMAL(8, 2),
-  type varchar,
+  type VARCHAR(20),
   imgURL TEXT,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
@@ -72,7 +72,7 @@ CREATE TABLE tentsites (
 
 CREATE TABLE things_nearby (
     id serial PRIMARY KEY,
-    img text,
-    title varchar,
-    distance varchar
+    img TEXT,
+    title VARCHAR(50),
+    distance VARCHAR(20)
 );

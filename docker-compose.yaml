@@ -24,19 +24,22 @@ services:
     ports:
       - ${SERVER_PORT}:80
     volumes:
-      - ./server:/code/src
+      - ./server/src:/code/src
     command: npm start
   client:
     image: hopcamp/client
     container_name: client
     restart: unless-stopped
     build: ./client
+    environment:
+      API_URL: http://server
+      PORT: ${CLIENT_PORT}
     depends_on:
       - server
     ports:
       - ${CLIENT_PORT}:${CLIENT_PORT}
     volumes:
-      - ./client:/code/src
+      - ./client/src:/code/src
     command: npm start
 volumes:
   pg-data:

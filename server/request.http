@@ -1,14 +1,26 @@
 ###
-GET http://localhost:5005/api/tentsites
+GET http://localhost:8000/api/photogallery
 
 
 ###
-GET http://localhost:5005/api/ratings
+GET http://localhost:8000/api/photogallery/2
 
 
 ###
-GET http://localhost:5005/api/camping-spots
+GET http://localhost:8000/api/tentsites
 
 
 ###
-GET http://localhost:5005/api/things-nearby
+GET http://localhost:8000/api/camping-spots
+
+
+###
+GET http://localhost:8000/api/ratings
+
+
+###
+GET http://localhost:8000/api/campers-also
+
+
+###
+GET http://localhost:8000/api/things-nearby

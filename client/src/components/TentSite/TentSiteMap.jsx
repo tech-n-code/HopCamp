@@ -100,7 +100,7 @@ function Map() {
   };
 
   const center = mapOptions.center;
-  console.log(center);
+  // console.log(center);
 
   const [markerSize, setMarkerSize] = useState({
     width: 150, // Replace with your desired width in pixels
@@ -126,7 +126,7 @@ function Map() {
                 text: item.price,
               },
               icon: {
-                url: item.icon + ".marker-icon",
+                // url: item.icon + ".marker-icon",
                 labelOrigin: new google.maps.Point(60, 15),
                 url: item.icon,
                 scaledSize: new window.google.maps.Size(30, 30),

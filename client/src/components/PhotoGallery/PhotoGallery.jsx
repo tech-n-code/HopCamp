@@ -7,16 +7,16 @@ function PhotoGallery() {
   const [showModal, setShowModal] = useState(false);
   const [selectedPhoto, setSelectedPhoto] = useState("");
   const [photoGallery, setPhotoGallery] = useState([]);
-  console.log(photoGallery);
+  // console.log(photoGallery);
 
   useEffect(() => {
     const fetchPhotos = async () => {
       try {
-        const response = await fetch("http://localhost:5001/api/photogallery/");
+        const response = await fetch("/api/photogallery");
         if (response.ok) {
           const data = await response.json();
           setPhotoGallery(data);
-          console.log(data);
+          // console.log(data);
         } else {
           throw new Error("Request Failed");
         }
