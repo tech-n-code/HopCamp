@@ -2,7 +2,7 @@ version: "3"
 services:
   database:
     image: postgres
-    container_name: database
+    container_name: hopcamp-db
     restart: unless-stopped
     env_file: .env
     ports:
@@ -13,14 +13,14 @@ services:
       - ./db/seed_master.sql:/docker-entrypoint-initdb.d/seed.sql
   server:
     image: hopcamp/server
-    container_name: server
+    container_name: hopcamp-api
     restart: unless-stopped
     build: ./server
     environment:
       DATABASE_URL: postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@database/${POSTGRES_DB}
       PORT: 80
     depends_on:
-      - database
+      - hopcamp-db
     ports:
       - ${SERVER_PORT}:80
     volumes:
@@ -28,14 +28,14 @@ services:
     command: npm start
   client:
     image: hopcamp/client
-    container_name: client
+    container_name: hopcamp-app
     restart: unless-stopped
     build: ./client
     environment:
-      API_URL: http://server
+      API_URL: http://hopcamp-api
       PORT: ${CLIENT_PORT}
     depends_on:
-      - server
+      - hopcamp-api
     ports:
       - ${CLIENT_PORT}:${CLIENT_PORT}
     volumes:
