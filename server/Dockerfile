@@ -1,5 +1,5 @@
 FROM node:18-alpine
-RUN apk add --no-cache python3 make g++
+RUN apk add --no-cache python3
 RUN npm install -g npm@9.8.0
 WORKDIR /code
 COPY package*.json ./
