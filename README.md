@@ -1,6 +1,10 @@
 ## ---------------Galvanize MCSP-20---------------
 
-# Front End Capstone Project: Hipcamp.com Clone (Hopcamp)
+# Front End Capstone Project: Hipcamp.com clone (Hopcamp)
+
+### Screenshot
+
+[![HopCamp](hopcamp_screenshot.png)](https://hopcamp.tech-n-code.com/)
 
 ## Tech Stack
 
@@ -43,7 +47,7 @@
 - to power-down the app run `docker-compose down -v` to delete its containers and associated volumes
 - (optional) to power-down the app and also delete its images run `docker-compose down -v --rmi all`
 - for class demo we used [Supabase](https://supabase.com/dashboard/sign-in) for database, all migration and seed files are in the `db` folder
-- NOTE: the project was refactored to deploy using docker-compose and no longer uses Supabase
+- NOTE: I forked and containerized the project for demo/deployment purposes using `docker-compose` and it no longer uses Supabase. It now uses PostgreSQL.
 
 ## Developers
 
