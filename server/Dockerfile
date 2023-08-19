@@ -1,6 +1,6 @@
 FROM node:18-alpine
 RUN apk add --no-cache python3 make g++
-RUN npm install -g npm@9.8.0
+RUN npm install -g npm@9.8.1
 WORKDIR /code
 COPY package*.json ./
 RUN npm ci
