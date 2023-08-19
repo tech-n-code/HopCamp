@@ -44,7 +44,7 @@
 - run `cp .env.template .env`
 - run `npm install --prefix=server; npm install --prefix=client`
 - run `docker-compose up --build`
-- to power-down the app run `docker-compose down -v` to delete its containers and associated volumes
+- to power-down the app and delete all containers and associated volumes run `docker-compose down -v`
 - (optional) to power-down the app and also delete its images run `docker-compose down -v --rmi all`
 - for class demo we used [Supabase](https://supabase.com/dashboard/sign-in) for database, all migration and seed files are in the `db` folder
 - NOTE: I forked and containerized the project for demo/deployment purposes using `docker-compose` and it no longer uses Supabase. It now uses PostgreSQL.
