@@ -4,9 +4,12 @@ services:
     image: postgres
     container_name: hopcamp-db
     restart: unless-stopped
+    # Load all env vars from .env into the container's environment
     env_file: .env
     ports:
       - 5432:5432
+    networks:
+      - hopcamp_network
     volumes:
       - pg-data:/var/lib/postgresql/data
       - ./db/migration_master.sql:/docker-entrypoint-initdb.d/migration.sql
@@ -23,7 +26,10 @@ services:
       - database
     ports:
       - ${SERVER_PORT}:80
+    networks:
+      - hopcamp_network
     volumes:
+      # Allows live reload inside a docker container
       - ./server/src:/code/src
     command: npm start
   client:
@@ -38,8 +44,13 @@ services:
       - server
     ports:
       - ${CLIENT_PORT}:${CLIENT_PORT}
+    networks:
+      - hopcamp_network
     volumes:
+      # Allows live reload inside a docker container
       - ./client/src:/code/src
     command: npm start
+networks:
+  hopcamp_network:
 volumes:
   pg-data:
