@@ -43,7 +43,7 @@
 - `cd` into the `HopCamp` directory
 - run `cp .env.template .env`
 - run `npm install --prefix=server; npm install --prefix=client`
-- run `docker-compose up --build`
+- run `docker-compose up -d --build`
 - to power-down the app and delete all containers and associated volumes run `docker-compose down -v`
 - (optional) to power-down the app and also delete its images run `docker-compose down -v --rmi all`
 - for class demo we used [Supabase](https://supabase.com/dashboard/sign-in) for database, all migration and seed files are in the `db` folder
