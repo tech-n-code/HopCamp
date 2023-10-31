@@ -38,16 +38,23 @@
 
 ## Installation & Setup
 
-- clone the project repo
 - make sure Docker Desktop is installed and running on your machine
+- click the green "code" button above, then click the 'copy' icon under HTTPS to copy the repo's URL
+- on your terminal run `git clone <repo-URL>`
 - `cd` into the `HopCamp` directory
 - run `cp .env.template .env`
-- run `npm install --prefix=server; npm install --prefix=client`
 - run `docker-compose up --build`
+- go to `localhost:3000` on your browser
+
+## Removing
+
 - to power-down the app and delete all containers and associated volumes run `docker-compose down -v`
 - (optional) to power-down the app and also delete its images run `docker-compose down -v --rmi all`
-- for class demo we used [Supabase](https://supabase.com/dashboard/sign-in) for database, all migration and seed files are in the `db` folder
-- NOTE: I forked and containerized the project for demo/deployment purposes using `docker-compose` and it no longer uses Supabase. It now uses PostgreSQL.
+
+## Additional notes
+
+- initially our team used [Supabase](https://supabase.com/dashboard/sign-in) for database; all migration and seed files are in the `db` folder
+- I forked and containerized the project for demo/deployment purposes utilizing `docker-compose` and it no longer uses Supabase, it now uses PostgreSQL.
 
 ## Developers
 
