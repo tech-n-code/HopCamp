@@ -51,6 +51,6 @@ services:
       - ./client/src:/code/src
     command: npm start
 networks:
-  hopcamp_network:
+  app-net:
 volumes:
   pg-data:
