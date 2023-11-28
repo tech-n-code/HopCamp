@@ -9,7 +9,7 @@ services:
     ports:
       - 5432:5432
     networks:
-      - hopcamp_network
+      - app-net
     volumes:
       - pg-data:/var/lib/postgresql/data
       - ./db/migration_master.sql:/docker-entrypoint-initdb.d/migration.sql
@@ -27,7 +27,7 @@ services:
     ports:
       - ${SERVER_PORT}:80
     networks:
-      - hopcamp_network
+      - app-net
     volumes:
       # Allows live reload inside a docker container
       - ./server/src:/code/src
@@ -45,7 +45,7 @@ services:
     ports:
       - ${CLIENT_PORT}:${CLIENT_PORT}
     networks:
-      - hopcamp_network
+      - app-net
     volumes:
       # Allows live reload inside a docker container
       - ./client/src:/code/src
