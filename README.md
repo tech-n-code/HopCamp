@@ -43,7 +43,7 @@
 - on your terminal run `git clone <repo-URL>`
 - `cd` into the `HopCamp` directory
 - run `cp .env.template .env`
-- run `docker-compose up --build`
+- run `docker-compose up -d --build`
 - go to `localhost:3000` on your browser
 
 ## Removing
